@@ -21,16 +21,20 @@ export const AuthContextProvider = ({children}) => {
 
 
     useEffect(()=>{
+        // {
+        //     axios.post("https://reqres.in/api/login",
+        //     {
+        //         "email": "kahjsjkh@gmail.com",
+        //         "password": "123456789"
+        //     })
+        //     .then((res)=>res.data.token)
+        //     .then((res)=>{
+        //         console.log(res);
+        //         setToken(res)
+        //     })
+        // }
         if(isAuth){
-            axios.post("https://reqres.in/api/login",
-            {
-                "email": "kahjsjkh@gmail.com",
-                "password": "123456789"
-            })
-            .then((res)=>res.data.token)
-            .then((res)=>{
-                setToken(res)
-            })
+            setToken("dvsgsdhsgh")
         }
     },[isAuth])
     return <AuthContext.Provider value={{token, isAuth, toggleAuth}}>{children}</AuthContext.Provider>

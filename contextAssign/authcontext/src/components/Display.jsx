@@ -1,5 +1,5 @@
 import { AuthContext } from "../contexts/AuthContext";
-import { useContext, useState } from 'react';
+import { useContext} from 'react';
 
 export const Display = () =>{
     const {token} = useContext(AuthContext)
