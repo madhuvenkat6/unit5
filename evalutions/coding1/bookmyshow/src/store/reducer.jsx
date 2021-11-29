@@ -1,4 +1,4 @@
-import { BOOK_TICKET } from "./actionTypes";
+import { BOOKED, BOOK_TICKET, UPDATE_MOVIE } from "./actionTypes";
 
 const initState = {
     movies:[
@@ -33,7 +33,8 @@ const initState = {
         time:"06:00pm",
         description:"hjhsjdshsdhgvhvh"
     },
-    isBooked:true
+    isBooked:false,
+    movie:{ }
 }
 
 
@@ -41,6 +42,16 @@ export const reducer = (state=initState,{type,payload})=>{
     switch (type) {
         case BOOK_TICKET:
             return {ticket:payload}
+        case UPDATE_MOVIE:
+            return {
+                ...state,
+                movie:payload
+            }
+        case BOOKED:
+            return{
+                ...state,
+                isBooked:true
+            }
         default:
             return {...state}
     }
