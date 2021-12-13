@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "first_name": "mad",
+      "last_name": "d",
+      "dob": "2021-12-01",
+      "id": 1
+    },
+    {
+      "first_name": "madju",
+      "last_name": "ddds",
+      "dob": "2021-12-01",
+      "id": 2
+    },
+    {
+      "first_name": "chanti",
+      "last_name": "naidu",
+      "dob": "2021-12-10",
+      "id": 3
+    }
+  ]
+}
